@@ -1,0 +1,126 @@
+body {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.container {
+  max-width: 750px;
+}
+
+.resume-header {
+  background: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
+  color: #fff;
+  padding: 2.5rem 1rem 2rem 1rem;
+  text-align: center;
+  border-radius: 1.5rem 1.5rem 0 0;
+  box-shadow: 0 8px 24px rgba(99,102,241,0.15);
+  position: relative;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 16px rgba(59,130,246,0.15);
+  background: #fff;
+}
+
+.resume-header h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.resume-header .lead {
+  font-weight: 500;
+  color: #dbeafe;
+}
+
+.resume-header i {
+  color: #c7d2fe;
+  margin-right: 4px;
+}
+
+.resume-section {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 12px rgba(59,130,246,0.07);
+  transition: box-shadow 0.2s;
+}
+
+.resume-section:hover {
+  box-shadow: 0 4px 24px rgba(59,130,246,0.13);
+}
+
+.resume-section h2 {
+  color: #6366f1;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.list-inline-item {
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: 0.5em 1.2em;
+  background: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  border: none;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+}
+
+.resume-section ul {
+  margin-bottom: 0;
+}
+
+.resume-section h5 {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.text-muted {
+  color: #64748b !important;
+}
+
+.achieve-img {
+  max-width: 320px;
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(59,130,246,0.13);
+  border: 2px solid #e0e7ff;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0;
+  }
+  .resume-header, .resume-section {
+    padding: 1.2rem 0.5rem;
+    text-align: center;
+  }
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+  .resume-section {
+    margin-bottom: 1rem;
+  }
+  .achieve-img {
+    max-width: 100%;
+  }
+}
